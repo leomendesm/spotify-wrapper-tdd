@@ -1,6 +1,6 @@
 # Spotify Wrapper
 
-[![Build Status](https://travis-ci.org/leomendesm/spotify-wrapper.svg?branch=master)](https://travis-ci.org/leomendesm/spotify-wrapper) [![Coverage Status](https://coveralls.io/repos/github/leomendesm/spotify-wrapper/badge.svg?branch=master)](https://coveralls.io/github/leomendesm/spotify-wrapper?branch=master)
+[![Build Status](https://travis-ci.org/leomendesm/spotify-wrapper-tdd.svg?branch=master)](https://travis-ci.org/leomendesm/spotify-wrapper-tdd) [![Coverage Status](https://coveralls.io/repos/github/leomendesm/spotify-wrapper-tdd/badge.svg?branch=master)](https://coveralls.io/github/leomendesm/spotify-wrapper-tdd?branch=master)
 
 A wrapper to work with the [Spotify Web API](https://developer.spotify.com/web-api/).
 
@@ -221,7 +221,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-| ![Leonardo Miraglia](https://avatars3.githubusercontent.com/u/11414392?s=460&v=4)|
+| ![Leonardo Miraglia](https://avatars3.githubusercontent.com/u/11414392?s=460&v=3)|
 |:---------------------:|
 |  [Leonardo Miraglia](https://github.com/leomendesm/)   |
 
