@@ -1,14 +1,12 @@
-/* global fetch */
-import API_URL from './config';
+function searcher (type, query) { 
+  return this.request(`${this.apiURL}/search?q=${query}&type=${type}`)
+};
 
-import toJson from './utils';
-
-export const search = (query, type) => fetch(`${API_URL}/search?q=${query}&type=${type}`).then(toJson);
-
-export const searchAlbums = query => search(query, 'album');
-
-export const searchArtists = query => search(query, 'artist');
-
-export const searchPlaylists = query => search(query, 'playlist');
-
-export const searchTracks = query => search(query, 'track');
+export default function search() {
+  return {
+    albums: searcher.bind(this, 'album'),
+    artists: searcher.bind(this, 'artist'),
+    playlists: searcher.bind(this, 'playlist'),
+    tracks: searcher.bind(this, 'track'),
+  };
+}
