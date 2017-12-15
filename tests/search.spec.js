@@ -8,7 +8,7 @@ sinonStubPromise(sinon);
 global.fetch = require('node-fetch');
 
 import { search, searchAlbums, searchArtists,
-         searchTracks, searchPlaylists } from '../src/main';
+         searchTracks, searchPlaylists } from '../src/search';
 
 describe('Spotify wrapper', () => {
     
