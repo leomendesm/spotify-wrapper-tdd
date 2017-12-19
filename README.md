@@ -28,7 +28,7 @@ $ npm i spotify-wrapper-tdd --save
 
 ```js
 // to import a specific method
-import SpotifyWrapper from 'spotify-wrapper';
+import SpotifyWrapper from 'spotify-wrapper-tdd';
 
 const spotify = new SpotifyWrapper({
   token: 'YOUR_TOKEN_HERE'
@@ -41,7 +41,7 @@ spotify.search.artists('Incubus');
 ### CommonJS
 
 ```js
-const SpotifyWrapper = require('spotify-wrapper');
+const SpotifyWrapper = require('spotify-wrapper-tdd');
 
 const spotify = new SpotifyWrapper({
   token: 'YOUR_TOKEN_HERE'
@@ -221,7 +221,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-| ![Leonardo Miraglia](https://avatars3.githubusercontent.com/u/11414392?s=460&v=3)|
+| ![Leonardo Miraglia](https://avatars3.githubusercontent.com/u/11414392?s=460&v=3&s=150)|
 |:---------------------:|
 |  [Leonardo Miraglia](https://github.com/leomendesm/)   |
 
