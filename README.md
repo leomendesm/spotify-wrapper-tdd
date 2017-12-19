@@ -211,7 +211,7 @@ spotify.album.getTracks('4aawyAB9vmqN3uQ7FjRGTy')
   })
 ```
 
-### playlist.getTracks(username, playlistId)
+### playlist.getTracks(username, playlistId, offset)
 
 > Search for all tracks in a specific Album with provided id. Test in [Spotify Web Console](https://developer.spotify.com/web-api/console/get-playlist-tracks/).
 
@@ -220,13 +220,13 @@ spotify.album.getTracks('4aawyAB9vmqN3uQ7FjRGTy')
 | Argument | Type    | Options           |
 |----------|---------|-------------------|
 |`username`   |*string* | 'Username of owner of playlist'|
-|----------|---------|-------------------|
 |`playlistId`   |*string* | 'Specific id of playlist'|
+|`offset`   |*integer* | 'Specific the offset from older request on playlist size > 100'|
 
 **Example**
 
 ```js
-spotify.playlist.getTracks('username', 'playlistId')
+spotify.playlist.getTracks('username', 'playlistId', 0)
   .then(data => {
     // do what you want with the data
   })

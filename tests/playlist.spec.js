@@ -30,8 +30,8 @@ describe('Playlist', () => {
             expect(fetchedStub).to.have.been.calledOnce;
         });
         it('should call fetch with the correct URL', () => {
-            const tracks = spotify.playlist.getTracks('foo', 'bar');
-            expect(fetchedStub).to.have.been.calledWith('https://api.spotify.com/v1/users/foo/playlists/bar/tracks');
+            const tracks = spotify.playlist.getTracks('foo', 'bar', 0);
+            expect(fetchedStub).to.have.been.calledWith('https://api.spotify.com/v1/users/foo/playlists/bar/tracks?limit=100&offset=0');
         });
     });
     

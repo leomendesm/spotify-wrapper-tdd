@@ -1,6 +1,6 @@
 {
   "name": "spotify-wrapper-tdd",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Just a Spotify wrapper using TDD on development.",
   "main": "lib/index.js",
   "scripts": {
