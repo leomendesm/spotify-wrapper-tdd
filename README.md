@@ -246,7 +246,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 |:---------------------:|
 |  [Leonardo Miraglia](https://github.com/leomendesm/)   |
 
-See also the list of [contributors](https://github.com/leomendesm/spotify-wrapper/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/leomendesm/spotify-wrapper-tdd/contributors) who participated in this project.
 
 ## License
 

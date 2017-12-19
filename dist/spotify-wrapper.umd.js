@@ -102,9 +102,13 @@ var _album = __webpack_require__(3);
 
 var _album2 = _interopRequireDefault(_album);
 
-var _config = __webpack_require__(4);
+var _playlist = __webpack_require__(4);
 
-var _utils = __webpack_require__(5);
+var _playlist2 = _interopRequireDefault(_playlist);
+
+var _config = __webpack_require__(5);
+
+var _utils = __webpack_require__(6);
 
 var _utils2 = _interopRequireDefault(_utils);
 
@@ -121,6 +125,7 @@ var SpotifyWrapper = function () {
 
     this.album = _album2.default.bind(this)();
     this.search = _search2.default.bind(this)();
+    this.playlist = _playlist2.default.bind(this)();
   }
 
   _createClass(SpotifyWrapper, [{
@@ -201,10 +206,31 @@ function album() {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var API_URL = exports.API_URL = 'https://api.spotify.com/v1';
+exports.default = playlist;
+function playlist() {
+  var _this = this;
+
+  return {
+    getTracks: function getTracks(user, id) {
+      return _this.request(_this.apiURL + "/users/" + user + "/playlists/" + id + "/tracks");
+    }
+  };
+}
 
 /***/ }),
 /* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var API_URL = exports.API_URL = 'https://api.spotify.com/v1';
+
+/***/ }),
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
