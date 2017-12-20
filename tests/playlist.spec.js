@@ -7,12 +7,12 @@ sinonStubPromise(sinon);
 
 global.fetch = require('node-fetch');
 
-import SpotifyWrapper from '../src/index';
+import SpotifyWrapperTdd from '../src/index';
 
 describe('Playlist', () => {
     let fetchedStub, promise, spotify; 
     beforeEach( () => {
-        spotify = new SpotifyWrapper({token: 'foo'});
+        spotify = new SpotifyWrapperTdd({token: 'foo'});
         fetchedStub = sinon.stub(global, 'fetch');
         promise = fetchedStub.returnsPromise();
     });

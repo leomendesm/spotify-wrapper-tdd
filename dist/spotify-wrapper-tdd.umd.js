@@ -211,8 +211,8 @@ function playlist() {
   var _this = this;
 
   return {
-    getTracks: function getTracks(user, id) {
-      return _this.request(_this.apiURL + "/users/" + user + "/playlists/" + id + "/tracks");
+    getTracks: function getTracks(user, id, offset) {
+      return _this.request(_this.apiURL + "/users/" + user + "/playlists/" + id + "/tracks?limit=100&offset=" + offset);
     }
   };
 }
@@ -247,4 +247,4 @@ exports.default = toJson;
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=spotify-wrapper.umd.js.map
+//# sourceMappingURL=spotify-wrapper-tdd.umd.js.map

@@ -9,7 +9,7 @@ import { API_URL } from './config';
 
 import toJson from './utils';
 
-export default class SpotifyWrapper {
+export default class SpotifyWrapperTdd {
   constructor(options) {
     this.apiURL = options.apiURL || API_URL;
     this.token = options.token;

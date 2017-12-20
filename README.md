@@ -28,9 +28,9 @@ $ npm i spotify-wrapper-tdd --save
 
 ```js
 // to import a specific method
-import SpotifyWrapper from 'spotify-wrapper-tdd';
+import SpotifyWrapperTdd from 'spotify-wrapper-tdd';
 
-const spotify = new SpotifyWrapper({
+const spotify = new SpotifyWrapperTdd({
   token: 'YOUR_TOKEN_HERE'
 });
 
@@ -41,9 +41,9 @@ spotify.search.artists('Incubus');
 ### CommonJS
 
 ```js
-const SpotifyWrapper = require('spotify-wrapper-tdd');
+const SpotifyWrapperTdd = require('spotify-wrapper-tdd');
 
-const spotify = new SpotifyWrapper({
+const spotify = new SpotifyWrapperTdd({
   token: 'YOUR_TOKEN_HERE'
 });
 ```
@@ -58,11 +58,11 @@ const spotify = new SpotifyWrapper({
 <script src="spotify-wrapper-tdd.umd.min.js"></script>
 ```
 
-After that the library will be available to the Global as `SpotifyWrapper`. Follow an example:
+After that the library will be available to the Global as `SpotifyWrapperTdd`. Follow an example:
 
 ```js
 
-const spotify = new SpotifyWrapper({
+const spotify = new SpotifyWrapperTdd({
   token: 'YOUR_TOKEN_HERE'
 });
 

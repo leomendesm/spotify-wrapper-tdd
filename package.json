@@ -1,7 +1,7 @@
 {
   "name": "spotify-wrapper-tdd",
-  "version": "1.0.5",
-  "description": "Just a Spotify wrapper using TDD on development.",
+  "version": "2.0.0",
+  "description": "Spotify wrapper using TDD on development.",
   "main": "lib/index.js",
   "scripts": {
     "clear": "rimraf lib",
