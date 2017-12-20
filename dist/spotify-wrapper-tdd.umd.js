@@ -4,9 +4,9 @@
 	else if(typeof define === 'function' && define.amd)
 		define([], factory);
 	else if(typeof exports === 'object')
-		exports["spotifyWrapper"] = factory();
+		exports["spotifyWrapperTdd"] = factory();
 	else
-		root["spotifyWrapper"] = factory();
+		root["spotifyWrapperTdd"] = factory();
 })(typeof self !== 'undefined' ? self : this, function() {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
@@ -108,6 +108,8 @@ var _playlist2 = _interopRequireDefault(_playlist);
 
 var _config = __webpack_require__(5);
 
+var _config2 = _interopRequireDefault(_config);
+
 var _utils = __webpack_require__(6);
 
 var _utils2 = _interopRequireDefault(_utils);
@@ -116,34 +118,33 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var SpotifyWrapper = function () {
-  function SpotifyWrapper(options) {
-    _classCallCheck(this, SpotifyWrapper);
+var SpotifyWrapperTdd = function () {
+  function SpotifyWrapperTdd(options) {
+    _classCallCheck(this, SpotifyWrapperTdd);
 
-    this.apiURL = options.apiURL || _config.API_URL;
+    this.apiURL = options.apiURL || _config2.default;
     this.token = options.token;
-
     this.album = _album2.default.bind(this)();
     this.search = _search2.default.bind(this)();
     this.playlist = _playlist2.default.bind(this)();
   }
 
-  _createClass(SpotifyWrapper, [{
+  _createClass(SpotifyWrapperTdd, [{
     key: 'request',
     value: function request(url) {
       var headers = {
         headers: {
-          'Authorization': 'Bearer ' + this.token
+          Authorization: 'Bearer ' + this.token
         }
       };
       return fetch(url, headers).then(_utils2.default);
     }
   }]);
 
-  return SpotifyWrapper;
+  return SpotifyWrapperTdd;
 }();
 
-exports.default = SpotifyWrapper;
+exports.default = SpotifyWrapperTdd;
 
 /***/ }),
 /* 2 */
@@ -158,7 +159,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = search;
 function searcher(type, query) {
   return this.request(this.apiURL + '/search?q=' + query + '&type=' + type);
-};
+}
 
 function search() {
   return {
@@ -227,7 +228,8 @@ function playlist() {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var API_URL = exports.API_URL = 'https://api.spotify.com/v1';
+var API_URL = 'https://api.spotify.com/v1';
+exports.default = API_URL;
 
 /***/ }),
 /* 6 */

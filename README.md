@@ -1,4 +1,4 @@
-# Spotify Wrapper
+# Spotify Wrapper Tdd
 
 [![Build Status](https://travis-ci.org/leomendesm/spotify-wrapper-tdd.svg?branch=master)](https://travis-ci.org/leomendesm/spotify-wrapper-tdd) [![Coverage Status](https://coveralls.io/repos/github/leomendesm/spotify-wrapper-tdd/badge.svg?branch=master)](https://coveralls.io/github/leomendesm/spotify-wrapper-tdd?branch=master)
 
@@ -41,7 +41,7 @@ spotify.search.artists('Incubus');
 ### CommonJS
 
 ```js
-const SpotifyWrapperTdd = require('spotify-wrapper-tdd');
+const SpotifyWrapperTdd = require('spotify-wrapper-tdd').default;
 
 const spotify = new SpotifyWrapperTdd({
   token: 'YOUR_TOKEN_HERE'

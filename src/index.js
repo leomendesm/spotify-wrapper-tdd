@@ -13,9 +13,9 @@ export default class SpotifyWrapperTdd {
   constructor(options) {
     this.apiURL = options.apiURL || API_URL;
     this.token = options.token;
-    this.album = album.bind(this)();
-    this.search = search.bind(this)();
-    this.playlist = playlist.bind(this)();
+    this.album = album.call(this);
+    this.search = search.call(this);
+    this.playlist = playlist.call(this);
   }
   request(url) {
     const headers = {
