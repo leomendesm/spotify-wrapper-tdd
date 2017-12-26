@@ -1,6 +1,6 @@
 # Spotify Wrapper Tdd
 
-[![Build Status](https://travis-ci.org/leomendesm/spotify-wrapper-tdd.svg?branch=master)](https://travis-ci.org/leomendesm/spotify-wrapper-tdd) [![Coverage Status](https://coveralls.io/repos/github/leomendesm/spotify-wrapper-tdd/badge.svg?branch=master)](https://coveralls.io/github/leomendesm/spotify-wrapper-tdd?branch=master)
+[![Build Status](https://travis-ci.org/leomendesm/spotify-wrapper-tdd.svg?branch=master)](https://travis-ci.org/leomendesm/spotify-wrapper-tdd) [![Coverage Status](https://coveralls.io/repos/github/leomendesm/spotify-wrapper-tdd/badge.svg?branch=master)](https://coveralls.io/github/leomendesm/spotify-wrapper-tdd?branch=master) [![Maintainability](https://api.codeclimate.com/v1/badges/0b0e67c9979c5c97fced/maintainability)](https://codeclimate.com/github/leomendesm/spotify-wrapper-tdd/maintainability)
 
 A wrapper to work with the [Spotify Web API](https://developer.spotify.com/web-api/).
 
