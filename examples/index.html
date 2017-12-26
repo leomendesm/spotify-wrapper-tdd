@@ -2,13 +2,16 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Spotify Wrapper</title>
+    <title>Spotify Wrapper Tdd</title>
   </head>
   <body>
     <div id="albums"></div>
-    <script type="text/javascript" src="../dist/spotify-wrapper.umd.js"></script>
+    <script type="text/javascript" src="../dist/spotify-wrapper-tdd.umd.js"></script>
     <script type="text/javascript">
-      const albums = spotifyWrapper.searchAlbums('Galantis');
+      const spotify = new SpotifyWrapperTdd({
+        token: '',
+      });
+      const albums = spotify.search.albums('Galantis');
       const albumsEl = document.getElementById('albums');
       
       albums.then(data => {
